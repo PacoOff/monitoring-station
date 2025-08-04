@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.28/jspdf.plugin.autotable.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Станция мониторинга</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+    <!-- Первый блок (герой-секция) -->
+<section class="hero-block">
+    <div class="hero-content animate__animated animate__fadeIn">
+        <h1>Добро пожаловать на станцию мониторинга окружающей среды</h1>
+        <p class="subtitle">
+            Здесь вы найдёте актуальные данные о состоянии природы, 
+            узнаете о последствиях загрязнения и способах сохранения экосистемы.
+        </p>
+        
+        <!-- Обновленные кнопки-карточки -->
+        <div class="action-cards animate__animated animate__fadeInUp animate__delay-1s">
+            <a href="#monitoring" class="action-card">
+                <span class="icon">🔍</span>
+                <span>Мониторинг это</span>
+            </a>
+            <a href="#tracking" class="action-card">
+                <span class="icon">📊</span>
+                <span>Мы отслеживаем</span>
+            </a>
+            <a href="#instruments" class="action-card">  <!-- Новая кнопка -->
+                <span class="icon">🛠️</span>
+                <span>Приборы</span>
+            </a>
+            <a href="#importance" class="action-card">
+                <span class="icon">❗</span>
+                <span>Почему это важно</span>
+            </a>
+           <a href="#ecodiary" class="action-card">
+        <span class="icon">📔</span>
+        <span>ЭКО-ДНЕВНИК</span>
+    </a>
+    <a href="#ecoquest" class="action-card">
+        <span class="icon">🏆</span>
+        <span>ЭКО-КВЕСТ</span>
+    </a>
+</div>
+    </div>
+</section>
+    <!-- Второй блок: Что такое экологический мониторинг -->
+<section id="monitoring" class="monitoring-block">
+    <div class="monitoring-content">
+        <h2>Экологический мониторинг</h2>
+        
+        <div class="monitoring-text">
+            <p>Экологический мониторинг — это постоянное наблюдение за состоянием окружающей среды с помощью приборов и анализа данных. Он помогает человеку следить за воздухом, водой, почвой и климатом, чтобы вовремя заметить загрязнения или неблагоприятные изменения и принять меры для защиты природы и здоровья людей.</p>
+            
+            <p>Такие наблюдения особенно важны вблизи промышленных предприятий, транспортных узлов, сельскохозяйственных полей и в городах с плотным населением. С помощью экологического мониторинга можно определить, например, насколько чист воздух, есть ли опасные примеси в почве, достаточно ли влаги для растений.</p>
+        </div>
+        
+        <div class="importance-section">
+            <h3>📌 Зачем это нужно?</h3>
+            <ul class="importance-list">
+                <li>Обеспечить чистую воду и воздух</li>
+                <li>Сохранить здоровье людей и животных</li>
+                <li>Предупреждать катастрофы и аварии</li>
+                <li>Защитить климат, биоразнообразие и природные ресурсы</li>
+                <li>Повысить экологическую грамотность общества</li>
+            </ul>
+        </div>
+        
+        <div class="facts-section">
+            <h3>🔍 Интересные факты:</h3>
+            <div class="fact-card">
+                <p>В Китае и Индии экологические станции установлены почти в каждом крупном городе и ведут круглосуточное наблюдение за качеством воздуха, так как смог стал серьёзной угрозой здоровью миллионов людей.</p>
+            </div>
+            <div class="fact-card">
+                <p>Первые системы экологического мониторинга появились в СССР ещё в 1970-х годах.</p>
+            </div>
+            <div class="fact-card">
+                <p>Сегодня данные с мониторинговых станций передаются в режиме реального времени через интернет и спутники.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Третий блок: Измеряемые параметры -->
+<section id="tracking" class="parameters-block">
+    <div class="parameters-content">
+        <h2>Основные измеряемые параметры</h2>
+        
+        <div class="parameter-grid">
+            <!-- Параметр 1 -->
+            <div class="parameter-card">
+                <div class="parameter-header">
+                    <span class="parameter-icon">🌡️</span>
+                    <h3>Температура воздуха</h3>
+                </div>
+                <div class="parameter-details">
+                    <p>Влияет на рост растений, активность животных, испарение влаги.</p>
+                    <div class="parameter-impact">
+                        <span class="impact-high">Высокая</span> → стресс у растений и животных
+                    </div>
+                    <div class="parameter-impact">
+                        <span class="impact-low">Низкая</span> → тормозит развитие
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Параметр 2 -->
+            <div class="parameter-card">
+                <div class="parameter-header">
+                    <span class="parameter-icon">🌍</span>
+                    <h3>Температура почвы</h3>
+                </div>
+                <div class="parameter-details">
+                    <p>Важна для семян, корней и микроорганизмов.</p>
+                    <div class="parameter-fact">
+                        <strong>Факт:</strong> большинство растений не прорастают при температуре ниже +10°C
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Параметр 3 -->
+            <div class="parameter-card">
+                <div class="parameter-header">
+                    <span class="parameter-icon">💧</span>
+                    <h3>Влажность воздуха</h3>
+                </div>
+                <div class="parameter-details">
+                    <p>Показывает уровень испарения воды и вероятность осадков.</p>
+                    <div class="parameter-warning">
+                        <strong>Риск:</strong> при низкой влажности возрастает вероятность лесных пожаров
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Параметр 4 -->
+            <div class="parameter-card">
+                <div class="parameter-header">
+                    <span class="parameter-icon">🌱</span>
+                    <h3>Влажность почвы</h3>
+                </div>
+                <div class="parameter-details">
+                    <p>Отражает способность почвы удерживать воду.</p>
+                    <div class="parameter-effects">
+                        <div class="effect-item">
+                            <span class="effect-bad">Засуха</span> → растения вянут
+                        </div>
+                        <div class="effect-item">
+                            <span class="effect-bad">Переувлажнение</span> → корни загнивают
+                        </div>
+                    </div>
+                    <p class="parameter-important">Критически важный показатель для аграриев</p>
+                </div>
+            </div>
+            
+            <!-- Параметр 5 -->
+            <div class="parameter-card">
+                <div class="parameter-header">
+                    <span class="parameter-icon">🌫️</span>
+                    <h3>Загазованность</h3>
+                </div>
+                <div class="parameter-details">
+                    <p>Концентрации CO₂, CO, NOx и других вредных веществ.</p>
+                    <div class="parameter-impacts">
+                        <div class="impact-item negative">
+                            Влияние на здоровье
+                        </div>
+                        <div class="impact-item negative">
+                            Ускорение глобального потепления
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="parameter-factblock">
+            <h3>📌 Интересный факт</h3>
+            <p>Загрязнение воздуха ежегодно уносит более 7 миллионов жизней по данным Всемирной организации здравоохранения.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Секция "Приборы" -->
+<section id="instruments" class="instruments-block">
+    <div class="instruments-content">
+        <h2>Приборы для измерения данных</h2>
+        <p class="section-intro">
+            Для сбора экологических данных используются разнообразные современные приборы — от простых датчиков до комплексных станций.
+        </p>
+        
+        <!-- Карточки приборов -->
+        <div class="instrument-grid">
+            <!-- Термометры -->
+            <div class="instrument-card">
+                <div class="instrument-header">
+                    <span class="instrument-icon">🌡️</span>
+                    <h3>Термометры</h3>
+                </div>
+                <div class="instrument-details">
+                    <p>Измеряют температуру воздуха и почвы с помощью чувствительных сенсоров. Данные передаются на экран или в облачную систему.</p>
+                    <div class="instrument-spec">
+                        <strong>Точность:</strong> до ±0.1°C
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Гигрометры -->
+            <div class="instrument-card">
+                <div class="instrument-header">
+                    <span class="instrument-icon">💧</span>
+                    <h3>Гигрометры</h3>
+                </div>
+                <div class="instrument-details">
+                    <p>Регистрируют влажность воздуха с использованием волосяных, электроемкостных или резистивных датчиков.</p>
+                    <div class="instrument-spec">
+                        <strong>Диапазон:</strong> 0–100% влажности
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Влагомеры почвы -->
+            <div class="instrument-card">
+                <div class="instrument-header">
+                    <span class="instrument-icon">🌱</span>
+                    <h3>Влагомеры почвы</h3>
+                </div>
+                <div class="instrument-details">
+                    <p>Тензиометры и электронные датчики измеряют скорость проникновения воды в почву и её текущую влажность.</p>
+                    <div class="instrument-spec">
+                        <strong>Глубина:</strong> до 2 метров
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Газоанализаторы -->
+            <div class="instrument-card">
+                <div class="instrument-header">
+                    <span class="instrument-icon">☁️</span>
+                    <h3>Газоанализаторы</h3>
+                </div>
+                <div class="instrument-details">
+                    <p>Обнаруживают CO₂, CO, NOx и другие газы. Современные модели работают в режиме реального времени.</p>
+                    <div class="instrument-spec">
+                        <strong>Чувствительность:</strong> от 1 ppm
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Комплексные станции -->
+            <div class="instrument-card">
+                <div class="instrument-header">
+                    <span class="instrument-icon">🛰️</span>
+                    <h3>Комплексные станции</h3>
+                </div>
+                <div class="instrument-details">
+                    <p>Объединяют несколько датчиков, передают данные онлайн, строят графики и прогнозируют тренды.</p>
+                    <div class="instrument-spec">
+                        <strong>Пример:</strong> Davis Vantage Pro
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Интересный факт -->
+        <div class="instrument-fact">
+            <h3>🌿 Интересный факт</h3>
+            <p>
+                Беспилотники с экодатчиками обследуют труднодоступные участки — леса, болота и горные районы. 
+                Например, в Сибири дроны помогают отслеживать выбросы метана из вечной мерзлоты.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Секция "Почему это важно" -->
+<section id="importance" class="importance-block">
+    <div class="importance-content">
+        <h2>Почему экологический мониторинг — это важно?</h2>
+        <p class="section-intro">
+            Реальные примеры и научные данные показывают, как загрязнения влияют на здоровье, природу и экономику.
+        </p>
+        
+        <!-- Проблемы в карточках -->
+        <div class="problem-cards">
+            <!-- Проблема 1: Воздух -->
+            <div class="problem-card">
+                <div class="problem-header" style="background-color: #e3f2fd;">
+                    <span class="problem-icon">💨</span>
+                    <h3>1. Загрязнение воздуха — это не просто "дым"</h3>
+                </div>
+                <div class="problem-details">
+                    <div class="problem-what">
+                        <h4>🧠 Что происходит:</h4>
+                        <p>При вдыхании загрязнённого воздуха в организм попадают диоксид азота, угарный газ, пыль PM2.5. Это вызывает головные боли, аллергию, у детей — ухудшение памяти.</p>
+                    </div>
+                    <div class="problem-example">
+                        <h4>📌 Пример: Жлобин (Гомельская область)</h4>
+                        <p>Рядом с металлургическим комбинатом мониторинг выявил превышение взвешенных частиц и сернистого газа. После жалоб предприятие установило новые фильтры.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Проблема 2: Почва -->
+            <div class="problem-card">
+                <div class="problem-header" style="background-color: #e8f5e9;">
+                    <span class="problem-icon">🌱</span>
+                    <h3>2. Состояние почвы влияет на еду и воду</h3>
+                </div>
+                <div class="problem-details">
+                    <div class="problem-what">
+                        <h4>🌍 Что происходит:</h4>
+                        <p>Загрязнённая или пересушенная почва — это меньше урожая, проблемы с водой и риски для животных.</p>
+                    </div>
+                    <div class="problem-example">
+                        <h4>📌 Пример: Брестская область, 2022</h4>
+                        <p>Превышение нитратов из-за удобрений сделало воду в колодцах непригодной. Аграрии были вынуждены пересевать часть урожая.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Проблема 3: Климат -->
+            <div class="problem-card">
+                <div class="problem-header" style="background-color: #fff3e0;">
+                    <span class="problem-icon">🌧️</span>
+                    <h3>3. Погода и климат — это не просто «жарко»</h3>
+                </div>
+                <div class="problem-details">
+                    <div class="problem-what">
+                        <h4>🌡️ Что происходит:</h4>
+                        <p>Частые ливни, засухи, "аномальные" оттепели — следствия изменения климата.</p>
+                    </div>
+                    <div class="problem-example">
+                        <h4>📌 Пример: Витебская область, 2021</h4>
+                        <p>За сутки выпало 80 мм осадков (месячная норма). Отсутствие локальных метеостанций привело к размыву дорог.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Проблема 4: Леса -->
+            <div class="problem-card">
+                <div class="problem-header" style="background-color: #fce4ec;">
+                    <span class="problem-icon">🌿</span>
+                    <h3>4. Леса и болота — «экологический щит»</h3>
+                </div>
+                <div class="problem-details">
+                    <div class="problem-what">
+                        <h4>🧪 Что происходит:</h4>
+                        <p>Низкая влажность повышает риск торфяных пожаров, вредящих экосистемам и людям.</p>
+                    </div>
+                    <div class="problem-example">
+                        <h4>📌 Пример: Гомельская область, 2022</h4>
+                        <p>Из-за длительной засухи начались торфяные тления возле бывшего осушенного болота. Дым от них доходил до ближайших деревень.
+Мониторинг показал критически низкую влажность почвы — ниже 20%. После этого было решено временно запретить посещение лесов и провести работы по увлажнению участка.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Проблема 5: Транспорт -->
+            <div class="problem-card">
+                <div class="problem-header" style="background-color: #f3e5f5;">
+                    <span class="problem-icon">🚉</span>
+                    <h3>5. Загрязнение от транспорта</h3>
+                </div>
+                <div class="problem-details">
+                    <div class="problem-what">
+                        <h4>🚛 Что происходит:</h4>
+                        <p>На транспортных узлах скапливаются выхлопные газы, сажа, тяжёлые металлы.</p>
+                    </div>
+                    <div class="problem-example">
+                        <h4>📌 Пример: Минск, автовокзал "Восточный"</h4>
+                        <p>Уровень CO превышал норму в 2.5 раза. Решение: изменён график выезда автобусов, высажены зелёные зоны.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Вывод -->
+        <div class="conclusion">
+            <p>Экологический мониторинг помогает <strong>предотвращать катастрофы</strong>, <strong>защищать здоровье</strong> и <strong>сохранять природу</strong>.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Секция "ЭКО-ДНЕВНИК" -->
+<section id="ecodiary" class="diary-block">
+  <div class="diary-content">
+    <h2>ЭКО-ДНЕВНИК</h2>
+    
+    <div class="diary-intro">
+      <p class="motto">🌱 <em>«Мониторинг территории – твой первый шаг к экологическому сознанию!»</em></p>
+      <p>Прими участие в исследовании окружающей среды вместе с "ЭКО-Дневником"!</p>
+    </div>
+
+    <!-- Инструкция -->
+    <div class="research-guide">
+      <h3>🔍 Как провести мини-исследование:</h3>
+      <ol class="guide-steps">
+        <li>Возьми экологический школьный прибор для измерения температуры, влажности и pH.</li>
+        <li>Выбери участок: двор, школьная клумба или парк.</li>
+        <li>Выполни измерения в трёх точках участка.</li>
+      </ol>
+      
+      <div class="measurements">
+        <!-- Блок с иконками измерений -->
+        <div class="measurement-item">
+          <span class="measurement-icon">🌡️</span>
+          <p>Температура воздуха</p>
+        </div>
+        <div class="measurement-item">
+          <span class="measurement-icon">💧</span>
+          <p>Влажность почвы</p>
+        </div>
+        <div class="measurement-item">
+          <span class="measurement-icon">🧪</span>
+          <p>Уровень pH</p>
+        </div>
+      </div>
+      
+      <p class="goal">🛠 <strong>Цель:</strong> понять, как природные условия влияют на растения и что мы можем сделать для улучшения окружающей среды.</p>
+    </div>
+
+    <!-- Форма для записи результатов -->
+    <div class="diary-form">
+      <h3>📓 Заполни дневник исследования</h3>
+      <form id="researchForm">
+        <!-- Таблица измерений -->
+        <div class="form-group">
+          <label>Результаты замеров:</label>
+          <table class="measurement-table">
+            <thead>
+              <tr>
+                <th>Точка</th>
+                <th>🌡 Температура (°C)</th>
+                <th>💧 Влажность (%)</th>
+                <th>🧪 pH</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td><input type="number" step="0.1" placeholder="23.5" class="measure-input"></td>
+                <td><input type="number" placeholder="65" class="measure-input"></td>
+                <td><input type="number" step="0.1" placeholder="6.5" class="measure-input"></td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td><input type="number" step="0.1" placeholder="24.0" class="measure-input"></td>
+                <td><input type="number" placeholder="70" class="measure-input"></td>
+                <td><input type="number" step="0.1" placeholder="6.2" class="measure-input"></td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td><input type="number" step="0.1" placeholder="22.5" class="measure-input"></td>
+                <td><input type="number" placeholder="60" class="measure-input"></td>
+                <td><input type="number" step="0.1" placeholder="6.8" class="measure-input"></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        
+        <!-- Выводы -->
+        <div class="form-group conclusions-group">
+      <label for="conclusions">Твои выводы:</label>
+      <textarea id="conclusions" placeholder="Сравни показатели: где условия благоприятнее? Что можно улучшить?"></textarea>
+    </div>
+        
+        <button type="button" id="exportPdf" class="export-btn">
+          <span class="icon">📄</span> Экспорт в PDF
+        </button>
+      </form>
+    </div>
+
+    <!-- Пример заполненного дневника -->
+    <div class="diary-example">
+      <h3>📌 Пример записи:</h3>
+      <div class="example-card">
+        <table class="example-table">
+          <thead>
+            <tr>
+              <th>Точка</th>
+              <th>🌡</th>
+              <th>💧</th>
+              <th>🧪</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>22.1°C</td>
+              <td>68%</td>
+              <td>6.2</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>21.5°C</td>
+              <td>72%</td>
+              <td>6.0</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>23.0°C</td>
+              <td>60%</td>
+              <td>6.8</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="example-conclusions">
+          <p><strong>Выводы:</strong></p>
+          <p>1. У точки 2 самая высокая влажность – здесь лучше растут цветы</p>
+          <p>2. У точки 3 самый высокий pH – возможно, нужно добавить удобрений</p>
+          <p>3. Температура равномерная на всех участках</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Секция "ЭКО-КВЕСТ" -->
+<section id="ecoquest" class="ecoquest-block">
+    <div class="ecoquest-content">
+        <h2>ЭКО-КВЕСТ: Проверь свои знания!</h2>
+        
+        <div class="quiz-container">
+            <div class="quiz-question">
+                <h3>Вопрос 1: Какой прибор измеряет влажность почвы?</h3>
+                <div class="quiz-options">
+                    <button class="quiz-option">Гигрометр</button>
+                    <button class="quiz-option">Тензиометр</button>
+                    <button class="quiz-option">Барометр</button>
+                </div>
+            </div>
+            
+            <div class="quiz-result hidden">
+                <p>Правильных ответов: <span id="score">0</span>/3</p>
+                <button class="quiz-restart">Пройти ещё раз</button>
+            </div>
+        </div>
+        
+        <div class="ecoquest-cta">
+            <p>Хочешь больше квестов? Подпишись на рассылку!</p>
+            <button class="subscribe-btn">Подписаться</button>
+        </div>
+    </div>
+</section>
+<!-- Кнопка "Наверх" -->
+<a href="#" id="backToTop" class="back-to-top" aria-label="Вернуться наверх">↑</a>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const options = document.querySelectorAll('.quiz-option');
+    const resultSection = document.querySelector('.quiz-result');
+    const scoreElement = document.getElementById('score');
+    let score = 0;
+    
+    // Правильные ответы (индекс начинается с 0)
+    const correctAnswers = [1]; // Для первого вопроса правильный ответ — тензиометр (индекс 1)
+    
+    options.forEach((option, index) => {
+        option.addEventListener('click', function() {
+            if (index === correctAnswers[0]) {
+                option.classList.add('correct');
+                score++;
+            } else {
+                option.classList.add('incorrect');
+            }
+            
+            // Показываем результат
+            scoreElement.textContent = score;
+            resultSection.classList.remove('hidden');
+        });
+    });
+    
+    // Кнопка "Пройти ещё раз"
+    document.querySelector('.quiz-restart').addEventListener('click', function() {
+        options.forEach(option => {
+            option.classList.remove('correct', 'incorrect');
+        });
+        resultSection.classList.add('hidden');
+        score = 0;
+    });
+});
+
+// "ЭКО-ДНЕВНИК"
+document.getElementById('exportPdf').addEventListener('click', function() {
+  // Проверка заполненности полей
+  const emptyInputs = Array.from(document.querySelectorAll('.measure-input'))
+    .filter(input => !input.value.trim());
+  
+  if (emptyInputs.length > 0) {
+    alert('Пожалуйста, заполните все измерения!');
+    emptyInputs[0].focus();
+    return;
+  }
+
+  const { jsPDF } = window.jspdf;
+  const doc = new jsPDF();
+  
+  // Настройки документа
+  doc.setDocumentProperties({
+    title: 'ЭКО-ДНЕВНИК: Результаты исследования',
+    subject: 'Экологический мониторинг',
+    author: 'Станция мониторинга'
+  });
+
+  // Добавляем русский текст как изображение (надежный способ)
+  const addRussianText = (text, x, y, size = 12, color = [0, 0, 0]) => {
+    const canvas = document.createElement('canvas');
+    const ctx = canvas.getContext('2d');
+    canvas.width = 200;
+    canvas.height = 50;
+    
+    ctx.font = `${size}px Arial`;
+    ctx.fillStyle = `rgb(${color.join(',')})`;
+    ctx.fillText(text, 10, 30);
+    
+    const imgData = canvas.toDataURL('image/png');
+    doc.addImage(imgData, 'PNG', x, y, canvas.width/4, canvas.height/4);
+  };
+
+  // 1. Заголовок
+  addRussianText('ЭКО-ДНЕВНИК', 15, 15, 20, [40, 167, 69]);
+  
+  // 2. Дата
+  addRussianText(`Дата: ${new Date().toLocaleDateString('ru-RU')}`, 15, 25, 12, [100, 100, 100]);
+
+  // 3. Таблица с данными (автотаблица работает с латиницей)
+  const headers = [["Point", "Temp (°C)", "Humidity (%)", "pH"]];
+  
+  const data = [];
+  document.querySelectorAll('.measurement-table tbody tr').forEach(row => {
+    const cells = row.querySelectorAll('td');
+    data.push([
+      cells[0].textContent,
+      cells[1].querySelector('input').value + ' °C',
+      cells[2].querySelector('input').value + ' %',
+      cells[3].querySelector('input').value
+    ]);
+  });
+  
+  doc.autoTable({
+    head: headers,
+    body: data,
+    startY: 40,
+    headStyles: {
+      fillColor: [76, 175, 80],
+      textColor: 255,
+      fontStyle: 'bold'
+    },
+    styles: {
+      fontSize: 10,
+      cellPadding: 5
+    }
+  });
+
+  // 4. Выводы как изображение
+  const conclusions = document.getElementById('conclusions').value;
+  if (conclusions) {
+    addRussianText('Выводы:', 15, doc.autoTable.previous.finalY + 20);
+    addRussianText(conclusions, 15, doc.autoTable.previous.finalY + 30);
+  }
+
+  // 5. Сохранение
+  doc.save('ЭКО-исследование_' + new Date().toISOString().slice(0, 10) + '.pdf');
+});
+// Кнопка "Наверх"
+// Ждем полной загрузки DOM
+document.addEventListener('DOMContentLoaded', function() {
+  // Получаем кнопку
+  const backToTopBtn = document.getElementById('backToTop');
+  
+  // Если кнопка не найдена, выходим
+  if (!backToTopBtn) {
+    console.error('Кнопка "Наверх" не найдена! Проверьте ID элемента.');
+    return;
+  }
+
+  // Функция для проверки видимости кнопки
+  function toggleBackToTop() {
+    if (window.scrollY > 300) {
+      backToTopBtn.classList.add('visible');
+    } else {
+      backToTopBtn.classList.remove('visible');
+    }
+  }
+
+  // Функция для плавной прокрутки
+  function scrollToTop() {
+    // Современный способ (поддерживается в большинстве браузеров)
+    if ('scrollBehavior' in document.documentElement.style) {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    } 
+    // Полифилл для старых браузеров
+    else {
+      const scrollDuration = 500; // Длительность анимации в ms
+      const scrollStep = -window.scrollY / (scrollDuration / 15);
+      
+      const scrollInterval = setInterval(function() {
+        if (window.scrollY !== 0) {
+          window.scrollBy(0, scrollStep);
+        } else {
+          clearInterval(scrollInterval);
+        }
+      }, 15);
+    }
+  }
+
+  // Показываем/скрываем кнопку при прокрутке
+  window.addEventListener('scroll', toggleBackToTop);
+  
+  // Инициализируем состояние кнопки при загрузке
+  toggleBackToTop();
+
+  // Обработчик клика на кнопке
+  backToTopBtn.addEventListener('click', function(e) {
+    e.preventDefault();
+    scrollToTop();
+  });
+
+  // Для поддержки в Safari и старых браузерах
+  if (!('scrollBehavior' in document.documentElement.style)) {
+    // Можно подключить полифилл динамически
+    const smoothscrollPolyfill = document.createElement('script');
+    smoothscrollPolyfill.src = 'https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js';
+    smoothscrollPolyfill.onload = function() {
+      SmoothScrollPolyfill();
+    };
+    document.head.appendChild(smoothscrollPolyfill);
+  }
+});
+
+document.getElementById('exportPdf').addEventListener('click', function() {
+  this.disabled = true;
+  this.innerHTML = '<span class="icon">⏳</span> Генерация PDF...';
+  // Код генерации PDF
+  setTimeout(() => {
+    this.innerHTML = '<span class="icon">📄</span> Экспорт в PDF';
+    this.disabled = false;
+  }, 1000);
+});
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function(e) {
+    e.preventDefault();
+    document.querySelector(this.getAttribute('href')).scrollIntoView({
+      behavior: 'smooth'
+    });
+  });
+});
+</script>
+</body>
+</html>
