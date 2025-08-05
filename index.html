@@ -22,30 +22,30 @@
         <!-- Обновленные кнопки-карточки -->
         <div class="action-cards animate__animated animate__fadeInUp animate__delay-1s">
             <a href="#monitoring" class="action-card">
-                <span class="icon">🔍</span>
+                <span class="icon">🌿</span>
                 <span>Мониторинг это</span>
             </a>
             <a href="#tracking" class="action-card">
-                <span class="icon">📊</span>
+                <span class="icon">📈</span>
                 <span>Мы отслеживаем</span>
             </a>
-            <a href="#instruments" class="action-card">  <!-- Новая кнопка -->
-                <span class="icon">🛠️</span>
+            <a href="#instruments" class="action-card">
+                <span class="icon">🔬</span>
                 <span>Приборы</span>
             </a>
             <a href="#importance" class="action-card">
-                <span class="icon">❗</span>
+                <span class="icon">💡</span>
                 <span>Почему это важно</span>
             </a>
            <a href="#ecodiary" class="action-card">
-        <span class="icon">📔</span>
+        <span class="icon">📖</span>
         <span>ЭКО-ДНЕВНИК</span>
     </a>
     <a href="#ecoquest" class="action-card">
-        <span class="icon">🏆</span>
+        <span class="icon">⭐</span>
         <span>ЭКО-КВЕСТ</span>
     </a>
-</div>
+        </div>
     </div>
 </section>
     <!-- Второй блок: Что такое экологический мониторинг -->
@@ -81,6 +81,9 @@
             <div class="fact-card">
                 <p>Сегодня данные с мониторинговых станций передаются в режиме реального времени через интернет и спутники.</p>
             </div>
+        </div>
+        <div class="back-to-section">
+            <a href="#" class="back-to-top-btn">Наверх</a>
         </div>
     </div>
 </section>
@@ -180,6 +183,9 @@
             <h3>📌 Интересный факт</h3>
             <p>Загрязнение воздуха ежегодно уносит более 7 миллионов жизней по данным Всемирной организации здравоохранения.</p>
         </div>
+        <div class="back-to-section">
+            <a href="#" class="back-to-top-btn">Наверх</a>
+        </div>
     </div>
 </section>
 
@@ -271,6 +277,9 @@
                 Беспилотники с экодатчиками обследуют труднодоступные участки — леса, болота и горные районы. 
                 Например, в Сибири дроны помогают отслеживать выбросы метана из вечной мерзлоты.
             </p>
+        </div>
+        <div class="back-to-section">
+            <a href="#" class="back-to-top-btn">Наверх</a>
         </div>
     </div>
 </section>
@@ -380,6 +389,9 @@
         <!-- Вывод -->
         <div class="conclusion">
             <p>Экологический мониторинг помогает <strong>предотвращать катастрофы</strong>, <strong>защищать здоровье</strong> и <strong>сохранять природу</strong>.</p>
+        </div>
+        <div class="back-to-section">
+            <a href="#" class="back-to-top-btn">Наверх</a>
         </div>
     </div>
 </section>
@@ -514,73 +526,337 @@
           <p>3. Температура равномерная на всех участках</p>
         </div>
       </div>
+            </div>
+        <div class="back-to-section">
+            <a href="#" class="back-to-top-btn">Наверх</a>
+        </div>
     </div>
-  </div>
 </section>
 
 <!-- Секция "ЭКО-КВЕСТ" -->
 <section id="ecoquest" class="ecoquest-block">
     <div class="ecoquest-content">
-        <h2>ЭКО-КВЕСТ: Проверь свои знания!</h2>
+        <h2>🧪 ЭКО-КВЕСТ: Проверь свои знания!</h2>
         
         <div class="quiz-container">
-            <div class="quiz-question">
-                <h3>Вопрос 1: Какой прибор измеряет влажность почвы?</h3>
-                <div class="quiz-options">
-                    <button class="quiz-option">Гигрометр</button>
-                    <button class="quiz-option">Тензиометр</button>
-                    <button class="quiz-option">Барометр</button>
+            <!-- ЗАДАНИЕ 1 -->
+            <div class="quiz-task" data-task="1">
+                <h3>🧪 ЗАДАНИЕ 1: Расшифруй показания</h3>
+                <div class="task-header">
+                    <h4>🔍 Что говорят датчики?</h4>
+                    <p class="task-instruction">Изучи таблицу показаний и выбери верные выводы:</p>
+                </div>
+                
+                <div class="readings-table">
+                    <h5>📊 Показания:</h5>
+                    <table class="readings-data">
+                        <tr><td>Температура воздуха:</td><td>35°C</td></tr>
+                        <tr><td>Влажность воздуха:</td><td>22%</td></tr>
+                        <tr><td>CO₂:</td><td>620 ppm</td></tr>
+                    </table>
+                </div>
+                
+                <div class="task-question">
+                    <h5>✅ Что происходит в окружающей среде?</h5>
+                    <div class="quiz-options">
+                        <label class="quiz-option">
+                            <input type="radio" name="task1" data-correct="false">
+                            <span>Комфортные условия для растений</span>
+                        </label>
+                        <label class="quiz-option">
+                            <input type="radio" name="task1" data-correct="true">
+                            <span>Воздух слишком сухой, возможен перегрев</span>
+                        </label>
+                        <label class="quiz-option">
+                            <input type="radio" name="task1" data-correct="false">
+                            <span>Загрязнение CO₂ выше нормы</span>
+                        </label>
+                        <label class="quiz-option">
+                            <input type="radio" name="task1" data-correct="false">
+                            <span>Всё в пределах нормы</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="explanation hidden" data-task="1">
+                    <p><strong>💡 Объяснение:</strong> При температуре 35°C и влажности 22% создаются экстремальные условия. Нормальная влажность для растений 40-70%, а температура выше 30°C может вызывать стресс. CO₂ в 620 ppm находится в пределах нормы (400-800 ppm).</p>
                 </div>
             </div>
+
+            <!-- ЗАДАНИЕ 2 -->
+            <div class="quiz-task" data-task="2">
+                <h3>🌱 ЗАДАНИЕ 2: Как помочь растениям в условиях жары?</h3>
+                <div class="quiz-options">
+                    <label class="quiz-option">
+                        <input type="radio" name="task2" data-correct="false">
+                        <span>Пересадить в песок</span>
+                    </label>
+                    <label class="quiz-option">
+                        <input type="radio" name="task2" data-correct="false">
+                        <span>Обливать листья холодной водой</span>
+                    </label>
+                    <label class="quiz-option">
+                        <input type="radio" name="task2" data-correct="true">
+                        <span>Создать тень, регулярно поливать и мульчировать почву</span>
+                    </label>
+                    <label class="quiz-option">
+                        <input type="radio" name="task2" data-correct="false">
+                        <span>Не трогать — жара стимулирует рост</span>
+                    </label>
+                </div>
+                <div class="explanation hidden" data-task="2">
+                    <p><strong>💡 Объяснение:</strong> В жаркую погоду растения испытывают стресс от перегрева и недостатка влаги. Тень защищает от прямых солнечных лучей, регулярный полив восстанавливает водный баланс, а мульчирование сохраняет влагу в почве и защищает корни от перегрева.</p>
+                </div>
+            </div>
+
+            <!-- ЗАДАНИЕ 3 -->
+            <div class="quiz-task" data-task="3">
+                <h3>🏙️ ЗАДАНИЕ 3: Почему в городах в жару воздух может быть опасным для здоровья?</h3>
+                <div class="quiz-options">
+                    <label class="quiz-option">
+                        <input type="radio" name="task3" data-correct="false">
+                        <span>Из-за появления большого количества кислорода</span>
+                    </label>
+                    <label class="quiz-option">
+                        <input type="radio" name="task3" data-correct="true">
+                        <span>Из-за увеличения озона и скопления загрязняющих веществ</span>
+                    </label>
+                    <label class="quiz-option">
+                        <input type="radio" name="task3" data-correct="false">
+                        <span>Из-за испарения воды с крыш домов</span>
+                    </label>
+                    <label class="quiz-option">
+                        <input type="radio" name="task3" data-correct="false">
+                        <span>Потому что деревья выделяют слишком много пыльцы</span>
+                    </label>
+                </div>
+                <div class="explanation hidden" data-task="3">
+                    <p><strong>💡 Объяснение:</strong> В жаркую погоду в городах образуется больше озона (O₃) из-за фотохимических реакций с выхлопными газами. Также усиливается концентрация загрязняющих веществ, которые не рассеиваются из-за отсутствия ветра. Это создает "остров тепла" и ухудшает качество воздуха.</p>
+                </div>
+            </div>
+
+            <!-- ЗАДАНИЕ 4 -->
+            <div class="quiz-task" data-task="4">
+                <h3>🌧️ ЗАДАНИЕ 4: Что такое «загнивание корней» и как его избежать?</h3>
+                <div class="quiz-options">
+                    <label class="quiz-option">
+                        <input type="radio" name="task4" data-correct="false">
+                        <span>Это когда корни перегреваются — нужно охлаждать их льдом</span>
+                    </label>
+                    <label class="quiz-option">
+                        <input type="radio" name="task4" data-correct="false">
+                        <span>Это повреждение корней насекомыми</span>
+                    </label>
+                    <label class="quiz-option">
+                        <input type="radio" name="task4" data-correct="false">
+                        <span>Это результат нехватки влаги</span>
+                    </label>
+                    <label class="quiz-option">
+                        <input type="radio" name="task4" data-correct="true">
+                        <span>Это когда корни долго находятся в переувлажнённой почве — нужен хороший дренаж</span>
+                    </label>
+                </div>
+                <div class="explanation hidden" data-task="4">
+                    <p><strong>💡 Объяснение:</strong> Загнивание корней происходит из-за недостатка кислорода в переувлажненной почве. Корни начинают гнить, растение не может получать питательные вещества и воду. Хороший дренаж обеспечивает доступ воздуха к корням и предотвращает застой воды.</p>
+                </div>
+            </div>
+
+            <!-- ЗАДАНИЕ 5 -->
+            <div class="quiz-task" data-task="5">
+                <h3>💧 ЗАДАНИЕ 5: Чем полезен дождь, а когда он становится опасным?</h3>
+                <div class="quiz-options">
+                    <label class="quiz-option">
+                        <input type="radio" name="task5" data-correct="false">
+                        <span>Полезен, когда он кислый; опасен — если чистый</span>
+                    </label>
+                    <label class="quiz-option">
+                        <input type="radio" name="task5" data-correct="true">
+                        <span>Полезен для орошения; опасен при переувлажнении, размывании почвы и эрозии</span>
+                    </label>
+                    <label class="quiz-option">
+                        <input type="radio" name="task5" data-correct="false">
+                        <span>Полезен только в городе; в лесу вреден</span>
+                    </label>
+                    <label class="quiz-option">
+                        <input type="radio" name="task5" data-correct="false">
+                        <span>Всегда полезен</span>
+                    </label>
+                </div>
+                <div class="explanation hidden" data-task="5">
+                    <p><strong>💡 Объяснение:</strong> Дождь полезен для орошения растений и пополнения грунтовых вод. Однако сильные ливни могут вызывать переувлажнение почвы, размывание грунта и эрозию. Это особенно опасно на склонах и в районах с нарушенной растительностью.</p>
+                </div>
+            </div>
+
+            <!-- ЗАДАНИЕ 6 -->
+            <div class="quiz-task" data-task="6">
+                <h3>🏭 ЗАДАНИЕ 6: Почему кислотные выбросы опасны для почвы?</h3>
+                <div class="quiz-options">
+                    <label class="quiz-option">
+                        <input type="radio" name="task6" data-correct="false">
+                        <span>Они ускоряют рост растений</span>
+                    </label>
+                    <label class="quiz-option">
+                        <input type="radio" name="task6" data-correct="false">
+                        <span>Делают почву твёрдой, как бетон</span>
+                    </label>
+                    <label class="quiz-option">
+                        <input type="radio" name="task6" data-correct="true">
+                        <span>Снижают pH, почва закисляется, и растения не могут усваивать питательные вещества</span>
+                    </label>
+                    <label class="quiz-option">
+                        <input type="radio" name="task6" data-correct="false">
+                        <span>Повышают уровень кислорода в почве</span>
+                    </label>
+                </div>
+                <div class="explanation hidden" data-task="6">
+                    <p><strong>💡 Объяснение:</strong> Кислотные выбросы (оксиды серы и азота) растворяются в дождевой воде, образуя кислотные дожди. Это снижает pH почвы, делая её более кислой. В кислой почве растения не могут усваивать важные питательные вещества (кальций, магний, фосфор), что приводит к их дефициту.</p>
+                </div>
+            </div>
+
+            <!-- Кнопки управления -->
+            <div class="quiz-controls">
+                <button id="checkAnswers" class="check-btn">Проверить ответы</button>
+                <button id="resetQuiz" class="reset-btn">Начать заново</button>
+            </div>
             
+            <!-- Результаты -->
             <div class="quiz-result hidden">
-                <p>Правильных ответов: <span id="score">0</span>/3</p>
+                <h3>🎉 Результаты теста:</h3>
+                <p>Правильных ответов: <span id="score">0</span>/6</p>
+                <div id="taskResults"></div>
                 <button class="quiz-restart">Пройти ещё раз</button>
             </div>
         </div>
-        
-        <div class="ecoquest-cta">
-            <p>Хочешь больше квестов? Подпишись на рассылку!</p>
-            <button class="subscribe-btn">Подписаться</button>
+        <div class="back-to-section">
+            <a href="#" class="back-to-top-btn">Наверх</a>
         </div>
-    </div>
-</section>
-<!-- Кнопка "Наверх" -->
-<a href="#" id="backToTop" class="back-to-top" aria-label="Вернуться наверх">↑</a>
+        
+        </section>
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-    const options = document.querySelectorAll('.quiz-option');
+    const quizTasks = document.querySelectorAll('.quiz-task');
     const resultSection = document.querySelector('.quiz-result');
     const scoreElement = document.getElementById('score');
+    const taskResultsElement = document.getElementById('taskResults');
+    const checkAnswersBtn = document.getElementById('checkAnswers');
+    const resetQuizBtn = document.getElementById('resetQuiz');
+    const restartBtn = document.querySelector('.quiz-restart');
+    
+    // Проверяем существование элементов
+    if (!quizTasks.length || !resultSection || !scoreElement) {
+        console.warn('Элементы квиза не найдены');
+        return;
+    }
+    
     let score = 0;
+    let totalQuestions = 0;
     
-    // Правильные ответы (индекс начинается с 0)
-    const correctAnswers = [1]; // Для первого вопроса правильный ответ — тензиометр (индекс 1)
-    
-    options.forEach((option, index) => {
-        option.addEventListener('click', function() {
-            if (index === correctAnswers[0]) {
-                option.classList.add('correct');
-                score++;
-            } else {
-                option.classList.add('incorrect');
+    // Функция для проверки ответов
+    function checkAnswers() {
+        score = 0;
+        totalQuestions = 0;
+        let resultsHTML = '';
+        
+        // Скрываем все объяснения сначала
+        document.querySelectorAll('.explanation').forEach(explanation => {
+            explanation.classList.add('hidden');
+        });
+        
+        quizTasks.forEach((task, taskIndex) => {
+            const taskNumber = taskIndex + 1;
+            const inputs = task.querySelectorAll('input');
+            let taskScore = 0;
+            let taskTotal = 0;
+            let taskCorrect = true;
+            
+            inputs.forEach(input => {
+                if (input.type === 'checkbox') {
+                    taskTotal++;
+                    const isCorrect = input.checked === (input.dataset.correct === 'true');
+                    if (isCorrect) {
+                        taskScore++;
+                    } else {
+                        taskCorrect = false;
+                    }
+                } else if (input.type === 'radio' && input.checked) {
+                    taskTotal++;
+                    if (input.dataset.correct === 'true') {
+                        taskScore++;
+                    } else {
+                        taskCorrect = false;
+                    }
+                }
+            });
+            
+            // Проверяем, что для радио-кнопок выбран ответ
+            const radioInputs = task.querySelectorAll('input[type="radio"]');
+            if (radioInputs.length > 0) {
+                const hasRadioAnswer = Array.from(radioInputs).some(input => input.checked);
+                if (!hasRadioAnswer) {
+                    taskCorrect = false;
+                }
             }
             
-            // Показываем результат
-            scoreElement.textContent = score;
-            resultSection.classList.remove('hidden');
+            if (taskCorrect && taskScore > 0) {
+                score++;
+            } else {
+                // Показываем объяснение для неправильного ответа
+                const explanation = task.querySelector('.explanation');
+                if (explanation) {
+                    explanation.classList.remove('hidden');
+                }
+            }
+            totalQuestions++;
+            
+            // Добавляем результат задания
+            const status = taskCorrect ? '✅' : '❌';
+            resultsHTML += `<p>${status} Задание ${taskNumber}: ${taskCorrect ? 'Правильно' : 'Ошибка'}</p>`;
         });
-    });
+        
+        // Показываем результаты
+        scoreElement.textContent = score;
+        taskResultsElement.innerHTML = resultsHTML;
+        resultSection.classList.remove('hidden');
+        
+        // Прокручиваем к результатам
+        resultSection.scrollIntoView({ behavior: 'smooth' });
+    }
     
-    // Кнопка "Пройти ещё раз"
-    document.querySelector('.quiz-restart').addEventListener('click', function() {
-        options.forEach(option => {
-            option.classList.remove('correct', 'incorrect');
+    // Функция для сброса квиза
+    function resetQuiz() {
+        // Снимаем все отметки
+        document.querySelectorAll('input[type="checkbox"], input[type="radio"]').forEach(input => {
+            input.checked = false;
         });
+        
+        // Скрываем результаты
         resultSection.classList.add('hidden');
+        
+        // Скрываем все объяснения
+        document.querySelectorAll('.explanation').forEach(explanation => {
+            explanation.classList.add('hidden');
+        });
+        
+        // Сбрасываем счетчик
         score = 0;
-    });
+    }
+    
+    // Обработчики событий
+    if (checkAnswersBtn) {
+        checkAnswersBtn.addEventListener('click', checkAnswers);
+    }
+    
+    if (resetQuizBtn) {
+        resetQuizBtn.addEventListener('click', resetQuiz);
+    }
+    
+    if (restartBtn) {
+        restartBtn.addEventListener('click', function() {
+            resetQuiz();
+            // Прокручиваем к началу квиза
+            document.querySelector('.quiz-container').scrollIntoView({ behavior: 'smooth' });
+        });
+    }
 });
 
 // "ЭКО-ДНЕВНИК"
@@ -595,8 +871,15 @@ document.getElementById('exportPdf').addEventListener('click', function() {
     return;
   }
 
-  const { jsPDF } = window.jspdf;
-  const doc = new jsPDF();
+  // Проверяем доступность jsPDF
+  if (typeof window.jspdf === 'undefined') {
+    alert('Ошибка: библиотека PDF не загружена. Проверьте подключение к интернету.');
+    return;
+  }
+
+  try {
+    const { jsPDF } = window.jspdf;
+    const doc = new jsPDF();
   
   // Настройки документа
   doc.setDocumentProperties({
@@ -605,30 +888,63 @@ document.getElementById('exportPdf').addEventListener('click', function() {
     author: 'Станция мониторинга'
   });
 
-  // Добавляем русский текст как изображение (надежный способ)
-  const addRussianText = (text, x, y, size = 12, color = [0, 0, 0]) => {
+  // Добавляем русский текст как изображение с улучшенным дизайном
+  const addRussianText = (text, x, y, size = 16, color = [0, 0, 0], bold = false, align = 'left') => {
     const canvas = document.createElement('canvas');
     const ctx = canvas.getContext('2d');
-    canvas.width = 200;
-    canvas.height = 50;
-    
-    ctx.font = `${size}px Arial`;
+    canvas.width = 600;
+    canvas.height = 120;
+    ctx.font = `${bold ? 'bold ' : ''}${size}px Arial, sans-serif`;
     ctx.fillStyle = `rgb(${color.join(',')})`;
-    ctx.fillText(text, 10, 30);
-    
+    ctx.textBaseline = 'middle';
+    ctx.textAlign = align;
+    // Тень
+    ctx.shadowColor = 'rgba(0, 0, 0, 0.1)';
+    ctx.shadowBlur = 2;
+    ctx.shadowOffsetX = 1;
+    ctx.shadowOffsetY = 1;
+    let drawX = 10;
+    if (align === 'center') drawX = canvas.width / 2;
+    ctx.fillText(text, drawX, canvas.height/2);
     const imgData = canvas.toDataURL('image/png');
-    doc.addImage(imgData, 'PNG', x, y, canvas.width/4, canvas.height/4);
+    doc.addImage(imgData, 'PNG', x, y, canvas.width/8, canvas.height/8);
   };
 
-  // 1. Заголовок
-  addRussianText('ЭКО-ДНЕВНИК', 15, 15, 20, [40, 167, 69]);
-  
-  // 2. Дата
-  addRussianText(`Дата: ${new Date().toLocaleDateString('ru-RU')}`, 15, 25, 12, [100, 100, 100]);
+  // Добавляем декоративную линию
+  const addDecorativeLine = (y) => {
+    doc.setDrawColor(76, 175, 80); // Зеленый цвет
+    doc.setLineWidth(2);
+    doc.line(15, y, 195, y);
+  };
 
-  // 3. Таблица с данными (автотаблица работает с латиницей)
-  const headers = [["Point", "Temp (°C)", "Humidity (%)", "pH"]];
-  
+  // Добавляем цветной прямоугольник для заголовка
+  const addHeaderBackground = (y, height) => {
+    doc.setFillColor(76, 175, 80); // Зеленый цвет
+    doc.rect(15, y, 180, height, 'F');
+  };
+
+      // 1. Красивый заголовок с фоном
+    addHeaderBackground(15, 15);
+    addRussianText('🌱 ЭКО-ДНЕВНИК ИССЛЕДОВАНИЯ', 20, 20, 24, [255, 255, 255], true);
+    
+    // 2. Информационная секция
+    addRussianText('📅 Дата исследования:', 15, 40, 24, [100, 100, 100]);
+    addRussianText(new Date().toLocaleDateString('ru-RU', { 
+      year: 'numeric', 
+      month: 'long', 
+      day: 'numeric' 
+    }), 15, 50, 24, [50, 50, 50]);
+    
+    addRussianText('🔬 Тип исследования: Мониторинг окружающей среды', 15, 65, 24, [100, 100, 100]);
+    addRussianText('📍 Объект: Территория исследования', 15, 75, 24, [100, 100, 100]);
+    
+    // 3. Декоративная линия
+    addDecorativeLine(90);
+    
+    // 4. Заголовок таблицы
+    addRussianText('📊 РЕЗУЛЬТАТЫ ИЗМЕРЕНИЙ', 15, 105, 24, [76, 175, 80], true);
+
+  // 5. Таблица с данными
   const data = [];
   document.querySelectorAll('.measurement-table tbody tr').forEach(row => {
     const cells = row.querySelectorAll('td');
@@ -640,64 +956,93 @@ document.getElementById('exportPdf').addEventListener('click', function() {
     ]);
   });
   
+  // Создаем таблицу с улучшенным дизайном
   doc.autoTable({
-    head: headers,
+    head: [],
     body: data,
-    startY: 40,
+    startY: 115,
+    styles: {
+      fontSize: 24, // возвращено обратно на 24
+      cellPadding: 12,
+      lineColor: [76, 175, 80],
+      lineWidth: 0.5
+    },
     headStyles: {
       fillColor: [76, 175, 80],
-      textColor: 255,
+      textColor: [255, 255, 255],
+      fontSize: 16,
       fontStyle: 'bold'
     },
-    styles: {
-      fontSize: 10,
-      cellPadding: 5
+    alternateRowStyles: {
+      fillColor: [248, 250, 243]
     }
   });
+  
+      // Добавляем заголовки таблицы как изображения (слева)
+    const headerY = 115;
+    addRussianText('📍 Точка', 20, headerY, 36, [0, 0, 0], true);
+    addRussianText('🌡️ Температура', 65, headerY, 36, [0, 0, 0], true);
+    addRussianText('💧 Влажность', 110, headerY, 36, [0, 0, 0], true);
+    addRussianText('🧪 pH', 155, headerY, 36, [0, 0, 0], true);
 
-  // 4. Выводы как изображение
+  // 6. Секция выводов
   const conclusions = document.getElementById('conclusions').value;
   if (conclusions) {
-    addRussianText('Выводы:', 15, doc.autoTable.previous.finalY + 20);
-    addRussianText(conclusions, 15, doc.autoTable.previous.finalY + 30);
+    const finalY = doc.autoTable.previous.finalY + 20;
+    
+    // Декоративная линия
+    addDecorativeLine(finalY - 10);
+    
+    // Заголовок выводов
+    addRussianText('💭 ВЫВОДЫ И АНАЛИЗ', 15, finalY, 24, [76, 175, 80], true);
+    
+    // Разбиваем выводы на строки для лучшего отображения
+    const maxCharsPerLine = 50;
+    const words = conclusions.split(' ');
+    const lines = [];
+    let currentLine = '';
+    
+    words.forEach(word => {
+      if ((currentLine + word).length <= maxCharsPerLine) {
+        currentLine += (currentLine ? ' ' : '') + word;
+      } else {
+        if (currentLine) lines.push(currentLine);
+        currentLine = word;
+      }
+    });
+    if (currentLine) lines.push(currentLine);
+    
+    // Добавляем каждую строку выводов
+    lines.forEach((line, index) => {
+      addRussianText(line, 15, finalY + 15 + (index * 18), 24, [50, 50, 50]); // Font size 24
+    });
   }
 
-  // 5. Сохранение
-  doc.save('ЭКО-исследование_' + new Date().toISOString().slice(0, 10) + '.pdf');
+  // 7. Футер с информацией
+  const footerY = doc.internal.pageSize.height - 30;
+  addDecorativeLine(footerY);
+  addRussianText('🌿 Станция мониторинга окружающей среды', 15, footerY + 5, 24, [100, 100, 100]); // Font size 24
+  addRussianText('📧 Экологическое образование и исследования', 15, footerY + 15, 24, [100, 100, 100]); // Font size 24
+
+  // 8. Сохранение с красивым именем
+  const dateStr = new Date().toLocaleDateString('ru-RU').replace(/\./g, '-');
+  doc.save(`ЭКО-ДНЕВНИК_${dateStr}.pdf`);
+  } catch (error) {
+    console.error('Ошибка при создании PDF:', error);
+    alert('Произошла ошибка при создании PDF. Попробуйте еще раз.');
+  }
 });
-// Кнопка "Наверх"
-// Ждем полной загрузки DOM
+// Обработчики для кнопок "Наверх"
 document.addEventListener('DOMContentLoaded', function() {
-  // Получаем кнопку
-  const backToTopBtn = document.getElementById('backToTop');
-  
-  // Если кнопка не найдена, выходим
-  if (!backToTopBtn) {
-    console.error('Кнопка "Наверх" не найдена! Проверьте ID элемента.');
-    return;
-  }
-
-  // Функция для проверки видимости кнопки
-  function toggleBackToTop() {
-    if (window.scrollY > 300) {
-      backToTopBtn.classList.add('visible');
-    } else {
-      backToTopBtn.classList.remove('visible');
-    }
-  }
-
-  // Функция для плавной прокрутки
+  // Функция для плавной прокрутки наверх
   function scrollToTop() {
-    // Современный способ (поддерживается в большинстве браузеров)
     if ('scrollBehavior' in document.documentElement.style) {
       window.scrollTo({
         top: 0,
         behavior: 'smooth'
       });
-    } 
-    // Полифилл для старых браузеров
-    else {
-      const scrollDuration = 500; // Длительность анимации в ms
+    } else {
+      const scrollDuration = 500;
       const scrollStep = -window.scrollY / (scrollDuration / 15);
       
       const scrollInterval = setInterval(function() {
@@ -710,46 +1055,26 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   }
 
-  // Показываем/скрываем кнопку при прокрутке
-  window.addEventListener('scroll', toggleBackToTop);
-  
-  // Инициализируем состояние кнопки при загрузке
-  toggleBackToTop();
-
-  // Обработчик клика на кнопке
-  backToTopBtn.addEventListener('click', function(e) {
-    e.preventDefault();
-    scrollToTop();
+  // Добавляем обработчики для всех кнопок "Наверх"
+  document.querySelectorAll('.back-to-top-btn').forEach(btn => {
+    btn.addEventListener('click', function(e) {
+      e.preventDefault();
+      scrollToTop();
+    });
   });
-
-  // Для поддержки в Safari и старых браузерах
-  if (!('scrollBehavior' in document.documentElement.style)) {
-    // Можно подключить полифилл динамически
-    const smoothscrollPolyfill = document.createElement('script');
-    smoothscrollPolyfill.src = 'https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js';
-    smoothscrollPolyfill.onload = function() {
-      SmoothScrollPolyfill();
-    };
-    document.head.appendChild(smoothscrollPolyfill);
-  }
-});
-
-document.getElementById('exportPdf').addEventListener('click', function() {
-  this.disabled = true;
-  this.innerHTML = '<span class="icon">⏳</span> Генерация PDF...';
-  // Код генерации PDF
-  setTimeout(() => {
-    this.innerHTML = '<span class="icon">📄</span> Экспорт в PDF';
-    this.disabled = false;
-  }, 1000);
 });
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function(e) {
     e.preventDefault();
-    document.querySelector(this.getAttribute('href')).scrollIntoView({
-      behavior: 'smooth'
-    });
+    const targetId = this.getAttribute('href');
+    const targetElement = document.querySelector(targetId);
+    
+    if (targetElement) {
+      targetElement.scrollIntoView({
+        behavior: 'smooth'
+      });
+    }
   });
 });
 </script>
