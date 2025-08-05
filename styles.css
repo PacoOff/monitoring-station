@@ -2194,6 +2194,24 @@ button:focus, a:focus {
         font-size: 14px;
     }
     
+    /* Специальная фиксация для iPhone */
+    .action-cards {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        width: 100% !important;
+        margin: 0 auto !important;
+        padding: 0 !important;
+    }
+    
+    .action-card {
+        width: 90% !important;
+        max-width: 280px !important;
+        margin: 0 auto 15px auto !important;
+        text-align: center !important;
+    }
+    
     /* Уменьшенные отступы */
     .monitoring-content,
     .parameters-content,
@@ -2231,4 +2249,26 @@ button:focus, a:focus {
         font-size: 14px;
     }
 }
+
+/* Специальная фиксация для iOS устройств (iPhone) */
+@supports (-webkit-touch-callout: none) {
+    .action-cards {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        width: 100% !important;
+        margin: 0 auto !important;
+        padding: 0 !important;
+    }
+    
+    .action-card {
+        width: 90% !important;
+        max-width: 280px !important;
+        margin: 0 auto 15px auto !important;
+        text-align: center !important;
+        display: block !important;
+    }
+}
+
 
