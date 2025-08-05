@@ -1753,16 +1753,33 @@ button:focus, a:focus {
     
     /* Карточки действий */
     .action-cards {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
         gap: 15px;
         margin-top: 20px;
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+        grid-template-columns: none !important;
+        grid-gap: 0 !important;
     }
     
     .action-card {
         padding: 20px 15px;
         font-size: 16px;
+        width: 90% !important;
+        max-width: 280px !important;
+        margin: 0 auto 15px auto !important;
+        text-align: center !important;
+        box-sizing: border-box !important;
+        float: none !important;
+        position: relative !important;
+        left: auto !important;
+        right: auto !important;
+        transform: none !important;
+        grid-column: auto !important;
     }
     
     .action-card .icon {
@@ -1922,10 +1939,17 @@ button:focus, a:focus {
 @media (max-width: 600px) {
     /* Дополнительные улучшения для экранов до 600px */
     .action-cards {
-        display: flex;
+        display: flex !important;
+        flex-direction: column !important;
         flex-wrap: wrap;
-        justify-content: center;
+        align-items: center !important;
+        justify-content: center !important;
         gap: 12px;
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+        grid-template-columns: none !important;
+        grid-gap: 0 !important;
     }
     
     .parameter-grid,
@@ -1975,10 +1999,17 @@ button:focus, a:focus {
 @media (min-width: 481px) and (max-width: 768px) {
     /* Оптимизация для планшетов */
     .action-cards {
-        display: flex;
+        display: flex !important;
+        flex-direction: column !important;
         flex-wrap: wrap;
-        justify-content: center;
+        align-items: center !important;
+        justify-content: center !important;
         gap: 15px;
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+        grid-template-columns: none !important;
+        grid-gap: 0 !important;
     }
     
     .parameter-grid,
@@ -2020,10 +2051,17 @@ button:focus, a:focus {
 @media (min-width: 769px) and (max-width: 1024px) {
     /* Оптимизация для больших планшетов и маленьких ноутбуков */
     .action-cards {
-        display: flex;
+        display: flex !important;
+        flex-direction: column !important;
         flex-wrap: wrap;
-        justify-content: center;
+        align-items: center !important;
+        justify-content: center !important;
         gap: 20px;
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+        grid-template-columns: none !important;
+        grid-gap: 0 !important;
     }
     
     .parameter-grid,
@@ -2100,10 +2138,17 @@ button:focus, a:focus {
     }
     
     .action-cards {
-        display: flex;
+        display: flex !important;
+        flex-direction: column !important;
         flex-wrap: wrap;
-        justify-content: center;
+        align-items: center !important;
+        justify-content: center !important;
         gap: 10px;
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+        grid-template-columns: none !important;
+        grid-gap: 0 !important;
     }
     
     .action-card {
@@ -2203,6 +2248,10 @@ button:focus, a:focus {
         width: 100% !important;
         margin: 0 auto !important;
         padding: 0 !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+        grid-template-columns: none !important;
+        grid-gap: 0 !important;
     }
     
     .action-card {
@@ -2210,6 +2259,13 @@ button:focus, a:focus {
         max-width: 280px !important;
         margin: 0 auto 15px auto !important;
         text-align: center !important;
+        box-sizing: border-box !important;
+        float: none !important;
+        position: relative !important;
+        left: auto !important;
+        right: auto !important;
+        transform: none !important;
+        grid-column: auto !important;
     }
     
     /* Уменьшенные отступы */
@@ -2260,6 +2316,8 @@ button:focus, a:focus {
         width: 100% !important;
         margin: 0 auto !important;
         padding: 0 !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
     }
     
     .action-card {
@@ -2268,6 +2326,41 @@ button:focus, a:focus {
         margin: 0 auto 15px auto !important;
         text-align: center !important;
         display: block !important;
+        box-sizing: border-box !important;
+        float: none !important;
+        position: relative !important;
+        left: auto !important;
+        right: auto !important;
+        transform: none !important;
+    }
+    
+    /* Дополнительная фиксация для всех мобильных устройств */
+    @media (max-width: 480px) {
+        .action-cards {
+            display: flex !important;
+            flex-direction: column !important;
+            align-items: center !important;
+            justify-content: center !important;
+            width: 100% !important;
+            margin: 0 auto !important;
+            padding: 0 !important;
+            max-width: 100% !important;
+            box-sizing: border-box !important;
+        }
+        
+        .action-card {
+            width: 90% !important;
+            max-width: 280px !important;
+            margin: 0 auto 15px auto !important;
+            text-align: center !important;
+            display: block !important;
+            box-sizing: border-box !important;
+            float: none !important;
+            position: relative !important;
+            left: auto !important;
+            right: auto !important;
+            transform: none !important;
+        }
     }
 }
 
